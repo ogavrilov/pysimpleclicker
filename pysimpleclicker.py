@@ -23,14 +23,14 @@ if __name__ == '__main__':
 	with open(options_file, 'r', encoding='utf-8') as f:
 		actions = json.load(f)
 
-	debug = False
+	debug = True
 	if len(sys.argv) > 2:
 		debug = True
 	
 	MyErrorFlag = False
 	try:
 		if debug:
-			print('read parameters (' + str(len(actions)) + ') form file: ' + options_file)
+			print('read parameters (' + str(len(actions)) + ') from file: ' + options_file)
 	except Exception as errorObject:
 		print('read parameters from file (' + options_file + '), error: ' + str(errorObject))
 		MyErrorFlag = True
@@ -70,10 +70,10 @@ if __name__ == '__main__':
 					if ActionDelay > 0:
 						time.sleep(ActionDelay)
 					pyautogui.keyUp(ActionValue)
-					if ActionSleep > 0:
-						time.sleep(ActionSleep)
-					if debug:
-						print('done')
+				if ActionSleep > 0:
+					time.sleep(ActionSleep)
+				if debug:
+					print('done')
 			elif ActionType == 'WaitForImage':
 				patt = cv2.imread(ActionValue, 0)
 				for i in range(0, ActionCount):
@@ -81,16 +81,11 @@ if __name__ == '__main__':
 					img = np.array(screenshot.getdata(), dtype='uint8').reshape((screenshot.size[1],screenshot.size[0],3))
 					h,w,points = find_patt(img, patt, 0.80)
 					if len(points[0])!=0:
-						pyautogui.moveTo(points[0][0]+w/2, points[1][0]+h/2)
-						for i in range(0, ActionCount):
-							pyautogui.click()
-						if ActionSleep > 0:
-							time.sleep(ActionSleep)
 						if debug:
 							print('done')
 						break
 					else:
 						if debug:
 							print('wait')
-						if ActionDelay > 0:
-							time.sleep(ActionDelay)
+				if ActionDelay > 0:
+					time.sleep(ActionDelay)
