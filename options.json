@@ -1,0 +1,1087 @@
+[
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/ConfOpen.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "WaitForImage",
+	"value": "C:\\tmp/ConfRootMain.png",
+	"count": 20,
+	"sleep": 150,
+	"delay": 5000
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/ConfRoot.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/Search.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 4,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 2000,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/SearchCancel.png",
+	"count": 1,
+	"sleep": 2000,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/ConfRootMain.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "right",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/CommonModules.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "right",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 30,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 6,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 133,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 21,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 38,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 7,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 13,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 36,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 2,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 2,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 30,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 19,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/ConfRoot.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/Search.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 4,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 2000,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/SearchCancel.png",
+	"count": 1,
+	"sleep": 2000,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/Documents.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "right",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 126,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "option",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/ConfRoot.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/Search.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 4,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 2000,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/SearchCancel.png",
+	"count": 1,
+	"sleep": 2000,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/DataProcessors.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "right",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "down",
+	"count": 163,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "option",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 500,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuText.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/MainMenuTextPass.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "tab",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "1",
+	"count": 3,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "enter",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "ClickToImg",
+	"value": "C:\\tmp/TextWindowExit.png",
+	"count": 1,
+	"sleep": 150,
+	"delay": 0
+	},
+	{
+	"type": "PushKeyboard",
+	"value": "f7",
+	"count": 1,
+	"sleep": 10000,
+	"delay": 0
+	}
+	]
