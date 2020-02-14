@@ -60,7 +60,7 @@ class pySimpleClicker:
 			time.sleep(endDelay)
 
 	def executeActions(self):
-		for action in actions:
+		for action in self.actions:
 			curTextError = ''
 			# prepare action values
 			actionType = action.get('type', '')
@@ -82,6 +82,8 @@ class pySimpleClicker:
 					self.__executeActionTypePushKeyboard(actionValue, actionCount, actionDelay, actionSleep)
 				elif actionType == 'WaitForImage':
 					self.__executeActionTypeWaitFoImg(actionValue, actionCount, actionDelay, actionSleep)
+			if self.errorFlag == True:
+				break
 
 	def __findImageByPattern(self, image, imagePattern, overlapPart):
 		img_grey = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -90,6 +92,7 @@ class pySimpleClicker:
 		loc = np.where(res > overlapPart)
 		return patt_H, patt_W, loc[::-1]
 
+# parse argv and get dict {key = value}
 def getArgNamespace():
 	argNamespace = {}
 	argName = ''
@@ -99,14 +102,12 @@ def getArgNamespace():
 				argNamespace[argName] = True
 			else:
 				argName = sys.argv[i].replace('-', '')
-				if argName == 'o':
-					argName = 'options'
 		else:
 			if argName != '':
 				argNamespace[argName] = sys.argv[i]
+				argName = ''
 			else:
-				argNamespace['options'] = sys.argv[i]
-			argName = ''
+				argName = sys.argv[i]
 	if argName != '':
 		argNamespace[argName] = True
 	return argNamespace
@@ -114,18 +115,22 @@ def getArgNamespace():
 if __name__ == '__main__':
 	# read args
 	argNamespace = getArgNamespace()
+	# debug print args
+	print('Received args:')
+	for key, value in argNamespace.items():
+		print('\n\t' + str(key) + '=' + str(value))
+
+	# read options
 	optfile = argNamespace.get('options', '')
 	if optfile != '':
 		options_file = optfile
 	else:
 		options_file = os.getcwd() + '/options.json'
+	print('\nReading options file: ' + options_file)
 	with open(options_file, 'r', encoding='utf-8') as f:
 		actions = json.load(f)
-	# debug print args
-	for key, value in argNamespace.items():
-		print(str(key) + '=' + str(value))
-	sys.exit()
 
+	# execute actions
 	mainClicker = pySimpleClicker(actions)
 	mainClicker.executeActions()
 	print(mainClicker.textLog)
