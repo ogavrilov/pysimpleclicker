@@ -1,7 +1,4 @@
-import cv2
 import time
-import numpy as np
-import pyscreenshot as ImageGrab
 import pyautogui
 import os
 import json
@@ -17,12 +14,9 @@ class pySimpleClicker:
 	def __executeActionTypeWaitFoImg(self, imgPath, repeatCount, repeatDelay, endDelay):
 		haveDone = False
 		self.textLog += '\n\tWaiting for image by pattern: ' + imgPath
-		patt = cv2.imread(imgPath, 0)
 		for i in range(0, repeatCount):
-			screenshot = ImageGrab.grab()
-			img = np.array(screenshot.getdata(), dtype='uint8').reshape((screenshot.size[1], screenshot.size[0], 3))
-			h, w, points = self.__findImageByPattern(img, patt, 0.80)
-			if len(points[0]) != 0:
+			points = pyautogui.locateCenterOnScreen(imgPath)
+			if points != None:
 				self.textLog += '\n\tImage found at ' + str(i+1) + ' iterations with delay of ' + str(i*repeatDelay) + ' ms'
 				haveDone = True
 				break
@@ -34,13 +28,13 @@ class pySimpleClicker:
 		else:
 			self.textLog += '\nError: image not found by pattern: ' + imgPath + ' after ' + str(repeatCount) + ' wait iterations with delay of ' + str(repeatCount*repeatDelay) + ' ms'
 			self.errorFlag = False
-		return h, w, points
+		return points
 
 	def __executeActionTypeClickToImgLeft(self, imgPath, repeatCount, repeatDelay, endDelay):
 		textLog = '\n\tLeft click by Image (by pattern: ' + imgPath + ')'
-		h, w, points = self.__executeActionTypeWaitFoImg(imgPath, repeatCount, repeatDelay, endDelay)
+		points = self.__executeActionTypeWaitFoImg(imgPath, repeatCount, repeatDelay, endDelay)
 		if self.errorFlag == False:
-			pyautogui.moveTo(points[0][0] + w / 2, points[1][0] + h / 2)
+			pyautogui.moveTo(points.x, points.y)
 			for i in range(0, repeatCount):
 				pyautogui.click()
 				self.textLog += textLog
@@ -84,13 +78,6 @@ class pySimpleClicker:
 					self.__executeActionTypeWaitFoImg(actionValue, actionCount, actionDelay, actionSleep)
 			if self.errorFlag == True:
 				break
-
-	def __findImageByPattern(self, image, imagePattern, overlapPart):
-		img_grey = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-		(patt_H, patt_W) = imagePattern.shape[:2]
-		res = cv2.matchTemplate(img_grey, imagePattern, cv2.TM_CCOEFF_NORMED)
-		loc = np.where(res > overlapPart)
-		return patt_H, patt_W, loc[::-1]
 
 # parse argv and get dict {key = value}
 def getArgNamespace():
