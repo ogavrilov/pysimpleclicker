@@ -10,11 +10,11 @@
 ````json
 [
   {
-    'type': 'WaitForImage',
-    'value': '/path/to/img',
-    'count': 5,
-    'sleep': 3000,
-    'delay': 150
+    "type": "WaitForImage",
+    "value": "/path/to/img",
+    "count": 5,
+    "sleep": 3000,
+    "delay": 150
   }
 ]
 ````
@@ -26,11 +26,11 @@
 ````json
 [
   {
-    'type': 'ClickToImg',
-    'value': '/path/to/img',
-    'count': 2,
-    'sleep': 250,
-    'delay': 150
+    "type": "ClickToImg",
+    "value": "/path/to/img",
+    "count": 2,
+    "sleep": 250,
+    "delay": 150
   }
 ]
 ````
@@ -43,25 +43,25 @@
 ````json
 [
   {
-    'type': 'PushKeyboard',
-    'value': 'a',
-    'count': 3,
-    'sleep': 100,
-    'delay': 150
+    "type": "PushKeyboard",
+    "value": "a",
+    "count": 3,
+    "sleep": 100,
+    "delay": 150
   },
   {
-    'type': 'PushKeyboard',
-    'value': 'enter',
-    'count': 1,
-    'sleep': 100,
-    'delay': 150
+    "type": "PushKeyboard",
+    "value": "enter",
+    "count": 1,
+    "sleep": 100,
+    "delay": 150
   },
   {
-    'type': 'PushKeyboard',
-    'value': ['shift', 'a'],
-    'count': 3,
-    'sleep': 100,
-    'delay': 150
+    "type": "PushKeyboard",
+    "value": ["shift", "a"],
+    "count": 3,
+    "sleep": 100,
+    "delay": 150
   }
 ]
 ````
