@@ -30,24 +30,60 @@ class pySimpleClicker:
 			self.errorFlag = False
 		return points
 
-	def __executeActionTypeClickToImgLeft(self, imgPath, repeatCount, repeatDelay, endDelay):
+	def __executeActionTypeClickToImg(self, imgPath, repeatCount, repeatDelay, endDelay, buttonLeft=True):
 		textLog = '\n\tLeft click by Image (by pattern: ' + imgPath + ')'
 		points = self.__executeActionTypeWaitFoImg(imgPath, repeatCount, repeatDelay, endDelay)
 		if self.errorFlag == False:
 			pyautogui.moveTo(points.x, points.y)
 			for i in range(0, repeatCount):
-				pyautogui.click()
+				if buttonLeft:
+					pyautogui.click()
+					textLog += ' left button'
+				else:
+					pyautogui.rightClick()
+					textLog += ' right button'
 				self.textLog += textLog
 				if i < repeatCount and repeatDelay > 0:
 					time.sleep(repeatDelay)
 			if endDelay > 0:
 				time.sleep(endDelay)
 
-	def __executeActionTypePushKeyboard(self, keyValue, repeatCount, repeatDelay, endDelay):
-		for i in range(0, repeatCount):
+	def __executePushKeyboard(selfself, keyValue):
+		if type(keyValue) == str:
 			pyautogui.keyDown(keyValue)
 			pyautogui.keyUp(keyValue)
+		elif type(keyValue) == list:
+			for keyValueStr in keyValue:
+				pyautogui.keyDown(keyValueStr)
+			for keyValueStr in keyValue:
+				pyautogui.keyUp(keyValueStr)
+
+	def __executeActionTypePushKeyboard(self, keyValue, repeatCount, repeatDelay, endDelay):
+		for i in range(0, repeatCount):
+			self.__executePushKeyboard(keyValue)
 			self.textLog += '\n\tPush key "' + keyValue + '"'
+			if i < repeatCount and repeatDelay > 0:
+				time.sleep(repeatDelay)
+		if endDelay > 0:
+			time.sleep(endDelay)
+
+	def __executeActionTypeKey(self, keyValue, repeatCount, repeatDelay, endDelay, keyDown=True):
+		for i in range(0, repeatCount):
+			if keyDown:
+				pyautogui.keyDown(keyValue)
+				self.textLog += '\n\tKey down "' + keyValue + '"'
+			else:
+				pyautogui.keyUp(keyValue)
+				self.textLog += '\n\tKey up "' + keyValue + '"'
+			if i < repeatCount and repeatDelay > 0:
+				time.sleep(repeatDelay)
+		if endDelay > 0:
+			time.sleep(endDelay)
+
+	def __executeActionTypeText(self, keyValue, repeatCount, repeatDelay, endDelay):
+		for i in range(0, repeatCount):
+			pyautogui.write(keyValue)
+			self.textLog += '\n\tWrite text: "' + keyValue + '"'
 			if i < repeatCount and repeatDelay > 0:
 				time.sleep(repeatDelay)
 		if endDelay > 0:
@@ -57,7 +93,7 @@ class pySimpleClicker:
 		for action in self.actions:
 			curTextError = ''
 			# prepare action values
-			actionType = action.get('type', '')
+			actionType = action.get('type', '').lower()
 			actionValue = action.get('value', '')
 			actionCount = int(action.get('count', 0))
 			actionSleep = int(action.get('sleep', 0)) / 1000
@@ -70,11 +106,19 @@ class pySimpleClicker:
 			if actionValue == '':
 				curTextError += 'Value incorrect;'
 			if self.errorFlag == False:
-				if actionType == 'ClickToImg':
-					self.__executeActionTypeClickToImgLeft(actionValue, actionCount, actionDelay, actionSleep)
-				elif actionType == 'PushKeyboard':
+				if actionType == 'ClickToImg'.lower():
+					self.__executeActionTypeClickToImg(actionValue, actionCount, actionDelay, actionSleep)
+				elif actionType == 'RightClickToImg'.lower():
+					self.__executeActionTypeClickToImg(actionValue, actionCount, actionDelay, actionSleep, buttonLeft=False)
+				elif actionType == 'PushKeyboard'.lower():
 					self.__executeActionTypePushKeyboard(actionValue, actionCount, actionDelay, actionSleep)
-				elif actionType == 'WaitForImage':
+				elif actionType == 'KeyDown'.lower():
+					self.__executeActionTypeKey(actionValue, actionCount, actionDelay, actionSleep)
+				elif actionType == 'KeyUp'.lower():
+					self.__executeActionTypeKey(actionValue, actionCount, actionDelay, actionSleep, keyDown=False)
+				elif actionType == 'WriteText'.lower():
+					self.__executeActionTypeText(actionValue, actionCount, actionDelay, actionSleep)
+				elif actionType == 'WaitForImage'.lower():
 					self.__executeActionTypeWaitFoImg(actionValue, actionCount, actionDelay, actionSleep)
 			if self.errorFlag == True:
 				break
