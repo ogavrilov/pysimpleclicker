@@ -27,7 +27,7 @@ class pySimpleClicker:
 				time.sleep(endDelay)
 		else:
 			self.textLog += '\nError: image not found by pattern: ' + imgPath + ' after ' + str(repeatCount) + ' wait iterations with delay of ' + str(repeatCount*repeatDelay) + ' ms'
-			self.errorFlag = False
+			self.errorFlag = True
 		return points
 
 	def __executeActionTypeClickToImg(self, imgPath, repeatCount, repeatDelay, endDelay, buttonLeft=True):
